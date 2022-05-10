@@ -44,6 +44,20 @@ nav {
   background-color: var(--background-color);
 }
 
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+@media (min-width: 600px) {
+  #nav-bar > .container {
+    display: flex;
+  }
+}
+
+
 .header-nav__logo {
   font-size: 28px;
   text-transform: uppercase;
@@ -86,4 +100,48 @@ img {
 .container {
     max-width: 980px;
     margin: auto;
+}
+
+.product-card__buttons {
+  
+}
+
+::-webkit-input-placeholder {
+   color: green;
+   font-weight: bold
+} 
+.contacts {
+  width:750px;
+  padding:12px;
+  border-bottom:1px solid #eee;
+  padding:12px;
+  border-bottom:1px solid #eee;
+  position:relative;
+}
+
+.footer__contacts input {
+   border:1px solid #aaa;
+   box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee;
+   border-radius: 3px;
+}
+
+#submit, .button-card {
+  background-color: #68b12f;
+  background: linear-gradient(top, #68b12f, #50911e);
+  border: 1px solid #509111;
+  border-bottom: 1px solid #5b992b;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 0 #9fd574;
+  color: white;
+  font-weight: bold;
+  padding: 6px 20px;
+  text-align: center;
+  text-shadow: 0 -1px 0 #396715;
+  margin: 3px;
+  padding: 3px;
+}
+
+#submit, .button-card:hover {
+  opacity:.85;
+  cursor: pointer;
 }
