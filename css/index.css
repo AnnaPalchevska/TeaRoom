@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Zilla+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-text-color: #111010;
+    --background-color: #67B749;
+    font-family: 'Zilla Slab', serif;
+    color: var(--main-text-color);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+nav {
+  background-color: var(--background-color);
+}
+
+.header-nav__logo {
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header-nav__menu-item {
+  color: var(--main-text-color);
+  display: flex;
+  text-decoration: none;
+  padding: 4px;
+}
+
+.header-nav__menu-item:hover {
+  text-decoration: underline;
+  color: #1D5E05;
+}
+
+.header-banner {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/30/Mariko_Tea_Plantation_135309311_org.jpg);
+  background-size: cover;
+  min-height: 450px;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header-banner__h1 {
+  font-size: 68px;
+  text-align: center;
+}
+
+.header-banner {
+  display: block;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+}
