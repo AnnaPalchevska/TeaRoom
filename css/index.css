@@ -17,35 +17,20 @@ img {
     width: 100%;
 }
 
+h2 {
+  text-align: center;
+}
+
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
 #header-img {
-  display: flex;
-  height: 50px;
-  width: min-content;
+    display: flex;
+    height: 50px;
+    width: min-content;
 }
-
-#burger-checkbox {
-  display: none;
-}
-
-.burger-icon {
-  font-size: 3rem;
-}
-
-.header-nav__menu {
-  display: none;
-}
-
-#burger-checkbox:checked ~ .header-nav__menu {
-  display: flex;
-}
-
-@media (min-width: 600px) {
-  .burger-icon {
-      display: none;
-  }
-  .header-nav__menu {
-      display: flex;
-  }
 
 nav {
   background-color: var(--background-color);
@@ -57,19 +42,39 @@ nav {
   width: 100%;
 }
 
-
 @media (min-width: 600px) {
   #nav-bar > .container {
     display: flex;
   }
 }
 
+#header-img {
+  display: flex;
+  align-items: center;
+}
 
 .header-nav__logo {
   font-size: 28px;
   text-transform: uppercase;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
+
+.header-nav__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .header-nav__menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+  }
+}
+
 .header-nav__menu-item {
   color: var(--main-text-color);
   display: flex;
@@ -85,9 +90,13 @@ nav {
 .header-banner {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/30/Mariko_Tea_Plantation_135309311_org.jpg);
   background-size: cover;
-  min-height: 450px;
+  min-height: 400px;
   background-position: center;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-banner__h1 {
@@ -95,22 +104,106 @@ nav {
   text-align: center;
 }
 
-.header-banner {
-  display: block;
+.header-banner__button {
+  background-color: var(--background-color);
+  background: linear-gradient(top, #68b12f, #50911e);
+  border: 1px solid #509111;
+  border-bottom: 1.5px solid var(--main-text-color);
+  border-radius: 3px;
+  box-shadow: 0 1px 1px 0 var(--main-text-color);
+  color: white;
+  font-weight: bold;
+  padding: 6px 20px;
+  text-align: center;
+  text-shadow: 0 -1px 0 var(--main-text-color);
+  margin: 3px;
+  padding: 3px;
 }
 
-img {
-    display: block;
-    width: 100%;
+.header-banner__button:hover {
+  opacity:.85;
+  cursor: pointer;
 }
 
-.container {
-    max-width: 980px;
-    margin: auto;
+.grid {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+#container-img {
+  transform: scale(1.5);
+}
+.icon {
+  transform: scale(0.5);
+}
+
+.description {
+  margin: 5px;
+}
+
+.video-plantation p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#video {
+  margin: 5px;
+  display: flex;
+  position: relative;
+  left: 200px;
+}
+
+.product-card {
+  border: 1.5px solid var(--background-color);
+  padding: 4px;
+}
+
+.product-card__image {
+  width: 230px;
+  height: 200px;
+}
+
+.product-card__h3 {
+  text-align: center;
+}
+
+.product-card__description {
+  text-align: justify;
 }
 
 .product-card__buttons {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px;
+}
+
+ .main-products__list {
+    display: grid;
+    gap: 7px;
+}
+
+@media (min-width: 640px) {
+  .main-products__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 860px) {
+  .main-products__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 980px) {
+  .main-products__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 ::-webkit-input-placeholder {
