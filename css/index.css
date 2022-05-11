@@ -129,9 +129,9 @@ nav {
   display: flex;
   text-align: center;
   flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
 }
 
 #container-img {
@@ -149,13 +149,19 @@ nav {
   display: flex;
   text-align: center;
   justify-content: center;
+  margin: 10px;
 }
 
 #video {
-  margin: 5px;
-  display: flex;
-  position: relative;
-  left: 200px;
+    max-width: 560px;
+    width: 100%;
+}
+
+iframe {
+    border-width: 2.5px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
 }
 
 .product-card {
